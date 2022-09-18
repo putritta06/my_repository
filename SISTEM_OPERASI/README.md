@@ -1,2 +1,1 @@
-# SISTEM_OPERASI
-Tugas Sistem Operasi
+#Tugas Sistem Operasi
