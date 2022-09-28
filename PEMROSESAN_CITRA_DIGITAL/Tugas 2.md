@@ -6,7 +6,7 @@
 <br>
 <br>
 
-<h2 align=center><u>Materi</u><h2>
+<h2 align=center><u>Explorasi 3 Layer pada sebuah Gambar</u><h2>
 
 ### Apa itu Octave?
 <br>
