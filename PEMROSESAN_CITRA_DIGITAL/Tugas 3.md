@@ -34,7 +34,13 @@ Ket :
 Hasil program saat dijalankan 
 <p align=center><img src=gambar/gambar16.jpg>
 
-<h2 align=center><u>Perbedaan Hosting Patterning dan Halftoning Dithering</u><h2>
+<h2 align=center><u>Hosting Dithering</u><h2>
 
+Digital halftoning adalah suatu proses untuk mengkonversi citra yang kontinu ke dalam suatu array berupa titik-titik. Halftoning bertujuan untuk memberikan kesan warna citra biner tampak seperti citra abu-abu meski hanya menggunakan piksel warna hitam dan putih saja.
+
+Ordered Dithering dilakukan dengan membandingkan tiap blok dari citra asli dengan sebuah matriks pembatas yang disebut dengan matriks dither.
+
+sumber :
+<a href="http://jimmypandapotan.blogspot.com/2018/01/pengolahan-citra-dengan-gnu-octave.html"> IN CHRIST I BELIEVE</a>
 
 
