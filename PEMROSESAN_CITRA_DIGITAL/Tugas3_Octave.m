@@ -13,7 +13,5 @@ subplot(1,4,3); imshow(average);
 luminosity = (0.3*red) + (0.59*green) + (0.11*blue);
 subplot(1,4,4); imshow(luminosity);
 
-asci = uint8(foto);
-asci
 
 
