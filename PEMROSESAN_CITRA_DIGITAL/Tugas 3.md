@@ -80,3 +80,4 @@ sumber :
 <a href="http://jimmypandapotan.blogspot.com/2018/01/pengolahan-citra-dengan-gnu-octave.html"> IN CHRIST I BELIEVE</a>
 
 
+
