@@ -26,8 +26,20 @@ Begitu pula dengan UNIX, yang pada awalnya juga terbatas oleh hardware yang ada.
  >> device controllers disks and tapes
  >> memory controllers Physical memory
 
+ Struktur sistem operasi monolitik hanya dapat digunakan pada beberapa perangkat keras saja. Hal ini disebabkan karena sistem operasi monolotik dilengkapi dengan operasi dual mode dan pelayanan system calls. Namun, Intel 8088 tidak dapat menggunakan dual mode sehingga tidak akan ada proteksi pada perangkat keras yang digunakan.
+
+ Secara umum, system calls pada sistem operasi monolitik dibuat dengan cara :
+
+- User program melakukan trap pada kernel
+- Instruksi akan berpindah dari user mode ke monitor mode
+- Kontrol akan berpindah ke sistem operasi dan otomatis akan memeriksa setiap parameter dari pemanggilan tersebut
+- Sistem operasi akan menuju ke tabel yang berisikan slot ke -k yang menunjukkan system call k
+- Setelah selesai, kontrol akan dikembalikan ke user program
+
  ### Struktur Berlapis
 
+ Sistem operasi berlapis memiliki beberapa lapis yang beragam, mulai dari bagian atas hingga bagian bawah. Masing-masing lapisan ini memiliki fungsi dan tujuannya tersendiri yang saling mendukung satu sama lain. Lapisan paling bawah digunakan untuk perangkat keras, sedangkan lapisan paling atas digunakan untuk user interface.
+ 
  Lapisan-lapisan sistem operasi adalah suatu abstraksi dari enkapsulasi sekumpulan struktur data dalam sistem operasi. Lapisan-lapisan yang berada di atas bisa mengakses operasi-operasi yang tersedia di lapisan-lapisan bawahnya. Stallings memberi model yang lebih detail, sebagai berikut: 
  - Lapisan 1. Berisi berbagai sirkuit elektronik, misal register, memory cells, dan logic gate. 
  - Lapisan 2. Berisi instruksi prosesor, misal instruksi aritmatika, instruksi transfer data, dsb. 
@@ -46,7 +58,25 @@ Begitu pula dengan UNIX, yang pada awalnya juga terbatas oleh hardware yang ada.
 Lapisan-lapisan dari 1-4 bukanlah bagian dari sistem operasi dan masih menjadi bagian dari prosesor secara ekslusif.
 Lapisan ke-5 hingga ke-7, sistem operasi sudah berhubungan dengan prosesor. Selanjutnya dari lapisan ke-8 hingga 13, sistem operasi berhubungan dengan media penyimpanan maupun perlatan-peralatan lain yang ditancapkan, misalnya peralatan jaringan.
 
-### Mikro Kerne
+Beberapa jenis lapisan yang digunakan dalam sistem operasi berlapis adalah :
+
+1. Lapisan Perangkat Keras
+
+Lapisan perangkat keras merupakan lapisan paling bawah pada sistem operasi berlapis. Lapisan ini terdiri dari sirkuit elektronik yang berfungsi untuk membersihkan register ataupun membaca lokasi memori, set instruksi pada prosesor, serta interupsi yang berisikan perintah yang dijalankan.
+
+2. Lapisan Sistem Operasi
+
+Lapisan sistem operasi merupakan sebuah lapisan yang berhubungan secara langsung dengan program spesifik pada bagian sistem operasinya. Lapisan ini memiliki kerja yang bersifat teknis dan terdiri dari penyimpanan sekunder komputer, ide dalam eksekusi program, dan lamat logic dari setiap proses yang berlangsung. Kode program sangat diperlukan pada lapisan ini agar dapat terlaksanakan dengan benar dan sesuai dengan yang diharapkan.
+
+3. Lapisan Kelengkapan
+
+Lapisan kelengkapan masih berhubungan dengan program karena termasuk dari kelengkapan sebuah sistem operasi. Lapisan ini memiliki tugas utama sebagai pengaturan komunikasi informasi yang berlangsung, termasuk menerima pesan-pesan dan proses pengirimannya. Lapisan ini juga memiliki tugas dalam penyimpanan jangka panjang, menyediakan akses pada perangkat keras eksternal yang menggunakan user interface standar, dan bertanggung jawab dalam hubungan identifier internal atau eksternal.
+
+4. Lapisan Program Aplikasi
+
+Lapisan program aplikasi bertujuan untuk menghubungkan pengguna dengan aplikasi yang digunakan, dimana sangat berhubungan erat dengan user interface. Lapisan inin akan memproses segala informasi yang dibutuhkan oleh pengguna dalam aplikasi.
+
+### Mikro Kernel
 
 Kernel adalah komponen sentral dari sistem operasi. Ia mengatur hal-hal seperti interrupt handler(untuk menyediakan layanan interupsi), process scheduler(membagi-bagi proses dalam prosesor), memory management, I/O, dan sebagainya. Atau dengan kata lain, ia adalah jembatan antara hardware dengan software. Cara tradisional untuk membangun sistem operasi adalah dengan membuat kernel monolitis, yaitu semua fungsi disediakan oleh kernel, dan ini menjadikan kernel suatu program yang besar dan kompleks.
 
@@ -60,4 +90,13 @@ Beberapa kelebihan kernel mikro:
  3. Flexibility . Fitur-fitur yang sudah ada bisa dikurangi, atau dimodifikasi sesuai dengan kebutuhan sehingga menjadi lebih efisien. Misalnya tidak semua pengguna membutuhkan security yang sangat ketat, atau kemampuan untuk melakukan distributed computing. 
  4. Portability . Pada kernel mikro, semua atau sebagian besar kode yang prosesor-spesifik berada di dalamnya. Jadi, proses porting ke prosesor lain bisa dilakukan dengan relatif sedikit usaha. Pada kelompok desktop misalnya, tampaknya dominasi Intel makin kuat. Tapi, sampai seberapa lama itu bisa bertahan? Karena itulah, portability adalah salah satu isu yang sangat penting. 
  5. Reliability . Semakin besar suatu software, maka tentulah semakin sulit untuk menjamin reliability-nya. Desain dengan pendekatan berlapis sangatlah membantu, dan dengan pendekatan kernel mikro bisa lebih lagi. Kernel mikro dapat dites secara ekstensif .Karena dia menggunakan API yang sedikit, maka bisa meningkatkan kualitas code di luar kernel. 
- 6. Support for object-oriendted OS . Model kernel mikro sangat sesuai untuk mengembangkan sistem operasi yang berbasis object-oriented. Contoh sistem operasi yang menggunakan kernel mikro adalah MacOS X dan QNX.
+ 6. Support for object-oriendted OS . Model kernel mikro sangat sesuai untuk mengembangkan sistem operasi yang berbasis object-oriented. 
+
+ Beberapa sistem operasi yang menerapkan mikro kernel adalah :
+
+- Tru64 UNIX
+- MacOSX
+- QNX
+
+Sumber :
+<a href="https://dosenit.com/ilmu-komputer/struktur-sistem-operasi">Sutiono S.Kom., M.Kom., M.T.I</a>
