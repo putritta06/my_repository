@@ -1,4 +1,4 @@
-pict = imread('/gambar/gambar2.png');
+pict = imread('C:/gambar/gambar2.png');
 imshow(pict);
 red = pict(:,:,1);
 green = pict(:,:,2);
