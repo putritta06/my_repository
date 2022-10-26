@@ -13,8 +13,10 @@
 Langkah-langkah 
 1. Siapkan matriks yang berisi angka, baik itu matriks 2 x 2, 3 x 3 atau yang lainnya. Tujuannya adalah untuk menentukan pola yang akan digunakan dari angka yang dikandungnya.
 2. Tentukan matriks diperbesarnya, misal 3 x 3, berarti akan ada 10 jenis pola. Hal itu didapat dari 3 x 3 = 9 ditambah 1. Kemudian, untuk menentukan interval tiap-tiap pola, adalah dengan 10 / 255 = 26.
+
 ~ jadi, tiap satu pola memuat angka yang panjangnya 26 (Dimulai dari angka 0 sampai dengan 255)
-~ untuk 4 x 4 -> 4 x 4 = 16 + 1 = 17. Tinggal menentukan interval untuk 17 pola, begitu juga 5 x 5 dan seterusnya.
+
+~ untuk 4 x 4 yaitu -> 4 x 4 = 16 + 1 = 17. Tinggal menentukan interval untuk 17 pola, begitu juga 5 x 5 dan seterusnya.
 3. Membuat pola yang pengambilan polanya ditentukan oleh matriks yang telah disiapkan di awal.
 
 Kesimpulan, matriks sebagai patokan, penentuan pola dengan panjang interval sesuai dengan matriks diperbesarnya, lalu membuat pola dengan menyesuaikan angka dalam matriks dengan pola yang berisi interval.
@@ -49,9 +51,13 @@ Kesimpulan, pembuatan histogram harus menyelesaikan perhitungan grayscale enhanc
 ## Algoritma Bit Place Slicing
 
 Algoritma ini berhubungan dengan biner, yang tujuannya adalah memotong bit / daerah warna grayscale pada sebuah gambar. Hal pertama yang harus kita ketahui adalah pemotongan daerah secara umum terlebih dahulu, yaitu :
+
 ~ 0 untuk angka yang tidak digunakan
+
 ~ 1 untuk angka yang digunakan
+
 Dalam biner, ada 8 buah angka desimal, di antaranya :
+
 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1
 
 Langkah-langkah 
@@ -60,11 +66,17 @@ Langkah-langkah
 3. Lihat angkanya lalu ubah ke dalam bentuk biner
 
 Contoh 
+
 | 64 59  |
+
 | 77 123 |
 
+<br>
+
 Bit Place Slicing
+
 | 01000000 00111011 |
+
 | 01001101 01111011 |
 
 Kesimpulan, algoritma ini merupakan metode kontribusi atau pengaruh tiap bit penyusun citra, tujuannya adalah merubah angka desimal menjadi angka biner. 
