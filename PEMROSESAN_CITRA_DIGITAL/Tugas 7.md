@@ -33,7 +33,7 @@ Fungsi transformasi intensitas berdasarkan informasi yang diekstraksi dari histo
 Peningkatan kontras pada sebuah citra disebabkan oleh penyebaran histogram yang cukup besar di seluruh skala intensitas.
 Peningkatan intensitas secara keseluruhan disebabkan oleh fakta bahwa tingkat intensitas usia rata-rata dalam histogram gambar yang disamakan lebih tinggi (lebih ringan) dari aslinya. Pemerataan histogram menghasilkan suatu fungsi transformasi yang adaptif, dalam arti didasarkan pada histogram dari suatu citra tertentu. Namun, setelah fungsi transformasi untuk sebuah gambar dihitung, itu tidak berubah kecuali histogram gambar berubah.
 
-<p align=center><img src=gambar/gambar63.png>
+<p align=center><img src=gambar/gambar63.PNG>
 
 Hal yang sama berlaku untuk gambar yang terlalu terang. Keseimbangannya mungkin dimiringkan ke warna cerah tertentu, jadi menyamakan area gambar yang lebih gelap agar sesuai akan membuatnya lebih jelas.
 

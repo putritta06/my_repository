@@ -70,4 +70,23 @@ Maka hasil program ketika dijalankan adalah sebagai berikut :
 
 <p align=center><img src=gambar/gambar54.png>
 
-<p align=center><img src=gambar/gambar55.png>
+<p align=center><img src=gambar/gambar55.PNG>
+
+<h2 align=center><u>Stegonography</u></h2>
+
+### Apa itu Steganography?
+
+Steganografi atau Steganography adalah sebuah ilmu, teknik atau seni menyembunyikan sebuah pesan rahasia dengan suatu cara sehingga pesan tersebut hanya akan diketahui oleh si pengirim dan si penerima pesan rahasia tersebut. Steganografi berasal dari Bahasa Yunani yaitu Stegano yang berarti “tersembunyi atau menyembunyikan” dan graphy yang berarti “Tulisan, jadi Steganografi adalah tulisan atau pesan yang disembunyikan. Steganografi kebalikannya kriptografi yang menyamarkan arti dari sebuah pesan rahasia saja, tetapi tidak menyembunyikan bahwa ada sebuah pesan. Kelebihan Steganografi dibandingkan dengan Kriptografi adalah pesan-pesannya akan dibuat tidak menarik perhatian dan tidak menimbulkan kecurigaan, berbeda dengan Kriptografi yang pesannya tidak disembunyikan, walaupun pesannya sulit untuk di pecahkan akan tetapi itu akan menimbulkan kecurigaan pesan tersebut.
+
+Pesan rahasia yang akan disembunyikan akan disisipkan pada suatu media penampung seperti citra, suara, video dan sebagainya yang terlihat tidak mencurigakan untuk menyimpan pesan rahasia. Pesan rahasia akan memerlukan sebuah kunci rahasia yang dinamakan stego-key agar hanyak pihak yang berhak saja yang dapat membuka atau mengekstak pesan rasahia tersebut.
+
+### Membuat Steganography di Citra dengan Octave
+
+Kode program :
+
+
+<p align=center><img src=gambar/gambar67.PNG>
+
+Hasil program :
+
+<p align=center><img src=gambar/gambar66.PNG>
