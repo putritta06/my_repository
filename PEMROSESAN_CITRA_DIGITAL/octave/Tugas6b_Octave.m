@@ -12,7 +12,6 @@ tPesanA = tPesan(:);
 tHasilP = transpose(tPesan);
 panj = length(tHasilP);
 counter = 1;
-
 stegonography = fgray;
 %stegonography = zeros(row,col);
 
