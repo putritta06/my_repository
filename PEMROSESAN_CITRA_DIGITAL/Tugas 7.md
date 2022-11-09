@@ -57,7 +57,7 @@ Proses pemindahan titik tengah menciptakan lingkungan baru, satu untuk setiap pi
 
 Konsep penyaringan linier berakar pada penggunaan transformasi Fourier untuk pemrosesan sinyal dalam domain frekuensi operasi penyaringannya dilakukan langsung pada piksel gambar. Penggunaan istilah penyaringan spasial linier membedakan jenis proses ini dari penyaringan domain frekuensi.
 
-<p align=center><img src=gambar/gambar64.png>
+<p align=center><img src=gambar/gambar64.PNG>
 
 Ada dua konsep terkait erat yang harus dipahami dengan jelas ketika melakukan penyaringan spasial linier. Yaitu korelasi; dan konvolusi.
 
@@ -81,7 +81,7 @@ Penyaringan lolos rendah melibatkan penghapusan komponen frekuensi tinggi dalam 
 
 Piksel yang berbeda akan terpengaruh oleh noise ini dengan cara yang berbeda karena mereka semua menghasilkannya secara berbeda. Jadi, menggunakan filter low-pass dapat menghilangkan banyak noise sementara hanya berdampak minimal pada gambar. Misalnya, gambar yang diambil dari teleskop akan memiliki gambar yang tersebar di banyak piksel, sehingga mengaburkan gambar sebagian besar akan berdampak pada noise.
 
-<p align=center><img src=gambar/gambar56.png>
+<p align=center><img src=gambar/gambar56.PNG>
 
 ### 2. High-Pass Filtering (Sharpening) Image Enhancement
 
@@ -95,20 +95,20 @@ Gambar biasanya terdiri dari cahaya yang dipantulkan dari objek. Sifat dasar dar
 1.  jumlah sumber cahaya yang datang pada pemandangan yang sedang dilihat
 2.  jumlah cahaya yang dipantulkan oleh objek dalam pemandangan. Bagian cahaya ini disebut komponen iluminasi dan reflektansi, dan masing-masing dilambangkan dengan i(x,y) dan r(x,y). Fungsi i dan r digabungkan secara perkalian untuk menghasilkan fungsi gambar F.
 
-<p align=center><img src=gambar/gambar57.png>
+<p align=center><img src=gambar/gambar57.PNG>
 
-<p align=center><img src=gambar/gambar58.png>
+<p align=center><img src=gambar/gambar58.PNG>
 
-<p align=center><img src=gambar/gambar59.png>
+<p align=center><img src=gambar/gambar59.PNG>
 
 Kita tidak dapat dengan mudah menggunakan produk di atas untuk beroperasi secara terpisah pada komponen frekuensi iluminasi dan refleksi karena transformasi Fourier dari produk dua fungsi tidak dapat dipisahkan; itu adalah
 
-<p align=center><img src=gambar/gambar60.png>
+<p align=center><img src=gambar/gambar60.PNG>
 
 Jika sekarang kita menerapkan filter dengan fungsi transfer yang menekan komponen frekuensi rendah dan meningkatkan komponen frekuensi tinggi, maka kita dapat menekan komponen iluminasi dan meningkatkan komponen reflektansi. Dengan demikian
 
-<p align=center><img src=gambar/gambar61.png>
+<p align=center><img src=gambar/gambar61.PNG>
 
 Dengan demikian, proses penyaringan homomorfik dapat diringkas dengan diagram berikut:
 
-<p align=center><img src=gambar/gambar62.png> 
+<p align=center><img src=gambar/gambar62.PNG> 
