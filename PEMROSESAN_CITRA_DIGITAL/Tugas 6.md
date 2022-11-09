@@ -90,3 +90,11 @@ Kode program :
 Hasil program :
 
 <p align=center><img src=gambar/gambar66.PNG>
+
+Sumber :
+
+<a href="https://www.immersa-lab.com/pengertian-steganografi-jenis-jenis-dan-prinsip-kerja.htm">1. IMMERSA LAB</a>
+
+<a href="https://www.imageeprocessing.com/2012/11/bit-plane-slicing.html">2. Robert Frost</a>
+
+<a href="https://github.com/khairulfuad09/Pemrosesan_Citra_Digital/blob/main/Tugas_Stegonography_ABKC6303_Pemrosesan_Citra_Digital/Stegonography.md">3. Khairul Fuad</a>
