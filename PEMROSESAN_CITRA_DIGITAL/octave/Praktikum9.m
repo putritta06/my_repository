@@ -6,11 +6,11 @@
 
 pkg load image;
 
-foto = imread('C:/gambar/gambar3.jpg'); #harus grayscale
-histF = histeq(foto);
+#foto = imread('C:/gambar/gambar3.jpg'); #harus grayscale
+#histF = histeq(foto);
 
-subplot(2,2,1); imshow(foto);
-subplot(2,2,2); imhist(foto);
+#subplot(2,2,1); imshow(foto);
+#subplot(2,2,2); imhist(foto);
 
 #misal
 # img =
