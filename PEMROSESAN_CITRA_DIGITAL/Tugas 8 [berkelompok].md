@@ -1,12 +1,7 @@
-## Nama           : Putri Tari Lestari
-<h2>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Maisya Puspitas Sari</h2>
-<h2>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp M.Gymnastiar</h2>
+## Nama           :  Putri Tari Lestari
+<h2>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Maisya Puspitas Sari</h2>
+<h2>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp M.Gymnastiar</h2>
 
-## NIM            : 2110131120002
-## Matkul         : Pemrosesan Citra Digital
-## Dosen Pengampu : Dr. Harja Santana Purba, M.Kom
-## Nama           : Putri Tari Lestari
-## NIM            : 2110131120002
 ## Matkul         : Pemrosesan Citra Digital
 ## Dosen Pengampu : Dr. Harja Santana Purba, M.Kom
 <h2>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Novan Alkaf Bahraini Saputra, S.Kom., M.T</h2>
