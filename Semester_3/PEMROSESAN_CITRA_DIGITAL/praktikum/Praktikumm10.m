@@ -1,4 +1,4 @@
-img = imread("gambar1.jpg");
+img = imread("gambar7.jpg");
 [img_height, img_width] = size(img);
 d1 = [
 	0 128;
@@ -16,6 +16,10 @@ threshold_img_d2 = repmat(d2, round(img_width/4), round(img_height/4));
 
 dith_img_d1 = img > threshold_img_d1;
 dith_img_d2 = img > threshold_img_d2;
+
+%imshow(img); title("Citra Original");
+%imshow(dith_img_d1); title("Hasil Dithering dengan D1");
+%imshow(dith_img_d2); title("Hasil Dithering dengan D2");
 
 subplot(1,3,1), imshow(img); title("Citra Original");
 subplot(1,3,2), imshow(dith_img_d1); title("Hasil Dithering dengan D1");

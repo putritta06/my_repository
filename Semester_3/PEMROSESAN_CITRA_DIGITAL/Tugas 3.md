@@ -44,7 +44,7 @@ Digital halftoning adalah suatu proses untuk mengkonversi citra yang kontinu ke 
 
 Gambar  1  dan  Gambar  2  menunjukkan  bahwa  citra  biner  tidak  “berbayang” dengan benar. Beberapa artefak  di  dalam citra tampak sebagai contouring  palsu. Hal ini sering terjadi jika kuantisasi dilakukan pada bitrate rendah (dalam hal ini adalah satu bit), sehingga terjadi kesalahan kuantisasi. Halftoning  bertujuan  untuk  memberikan  kesan  warna  citra  biner  tampak  seperti citra abu-abu meskipun hanya menggunakan piksel warna hitam dan putih saja. Meskipun teknik ambang batas(thresholding) yang sederhana ini dapat mengkonversi citra abu-abu menjadi  citra  biner,  namun  kualitas  citra  yang  dihasilkan  masih  kurang  baik.  Untuk memperbaiki  keterbatasan  ini,  pada  tulisan  ini  akan  disimulasikan  citra  biner  yang dikonversi dari citra abu-abu menggunakan metode ordered dithering.
 
-<h2 align=center><u>Metode Dithering</u><h2>
+<h2 align=center><u>Metode Patterning</u><h2>
 
 Patterning adalah yang paling sederhana dari tiga teknik untuk menghasilkan gambar halftoning digital. Patterning dilakukan dengan mengganti setiap piksel dengan pola yang diambil dari 'font biner'.
 
