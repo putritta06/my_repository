@@ -1,2 +1,2 @@
 # my_repository
-Tugas Kuliah Semester 3
+Tugas - tugas Kuliah 
